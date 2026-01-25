@@ -1,0 +1,35 @@
+t=2026-01-25T16:15:39+0530 lvl=info msg="no configuration paths supplied"
+t=2026-01-25T16:15:39+0530 lvl=info msg="using configuration at default config path" path="/Users/saurabhtripathi/Library/Application Support/ngrok/ngrok.yml"
+t=2026-01-25T16:15:39+0530 lvl=info msg="open config file" path="/Users/saurabhtripathi/Library/Application Support/ngrok/ngrok.yml" err=nil
+t=2026-01-25T16:15:39+0530 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2026-01-25T16:15:39+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-01-25T16:15:39+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-01-25T16:15:40+0530 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:3001 url=https://intellectively-unstipulated-hermina.ngrok-free.dev
+t=2026-01-25T16:15:40+0530 lvl=info msg="update available" obj=updater
+t=2026-01-25T16:15:57+0530 lvl=info msg="join connections" obj=join id=e5baa0b59f54 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:04+0530 lvl=info msg="join connections" obj=join id=a09834f2adf0 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:04+0530 lvl=info msg="join connections" obj=join id=41bf72cedcad l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:04+0530 lvl=info msg="join connections" obj=join id=5e2495be375b l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:04+0530 lvl=info msg="join connections" obj=join id=d9eb5a2fde57 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:04+0530 lvl=info msg="join connections" obj=join id=7c2853a4db96 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:04+0530 lvl=info msg="join connections" obj=join id=17efa270adbb l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:04+0530 lvl=info msg="join connections" obj=join id=c27b83b4c19e l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:04+0530 lvl=info msg="join connections" obj=join id=c252fdef2ca3 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:14+0530 lvl=info msg="join connections" obj=join id=95906a3d6506 l=[::1]:3001 r=45.115.54.102:56858
+t=2026-01-25T16:16:18+0530 lvl=info msg="join connections" obj=join id=7e29480bed14 l=[::1]:3001 r=45.115.54.102:56860
+t=2026-01-25T16:16:18+0530 lvl=info msg="join connections" obj=join id=3d3938cb09fd l=[::1]:3001 r=45.115.54.102:56860
+t=2026-01-25T16:16:18+0530 lvl=info msg="join connections" obj=join id=718a391c0272 l=[::1]:3001 r=45.115.54.102:56860
+t=2026-01-25T16:16:18+0530 lvl=info msg="join connections" obj=join id=e6f8e24904e9 l=[::1]:3001 r=45.115.54.102:56860
+t=2026-01-25T16:16:22+0530 lvl=info msg="join connections" obj=join id=83c9e22db89c l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:16:51+0530 lvl=info msg="join connections" obj=join id=3fa87bf55595 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:17:17+0530 lvl=info msg="join connections" obj=join id=36083e390af3 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:18:51+0530 lvl=info msg="join connections" obj=join id=e4aa2701820a l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:18:55+0530 lvl=info msg="join connections" obj=join id=44f4c63b1acd l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:18:55+0530 lvl=info msg="join connections" obj=join id=035385e827df l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:18:55+0530 lvl=info msg="join connections" obj=join id=09c2e92a43e3 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:18:55+0530 lvl=info msg="join connections" obj=join id=94092ddef3ab l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:18:55+0530 lvl=info msg="join connections" obj=join id=f23517f521e8 l=[::1]:3001 r=45.115.54.102:56856
+t=2026-01-25T16:19:04+0530 lvl=info msg="join connections" obj=join id=0a6e198ef478 l=[::1]:3001 r=45.115.54.102:56881
+t=2026-01-25T16:19:35+0530 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2026-01-25T16:19:35+0530 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2026-01-25T16:19:35+0530 lvl=info msg="accept failed" obj=tunnels.session obj=csess id=9f0df1cad937 err="reconnecting session closed"

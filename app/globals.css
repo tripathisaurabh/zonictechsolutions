@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-semibold text-slate-900;
+}
+
+.section-subtitle {
+  @apply text-base md:text-lg text-slate-600;
+}
+
+.card {
+  @apply border border-slate-200 bg-white rounded-2xl shadow-sm;
+}
+
+.link-underline {
+  @apply underline underline-offset-4 decoration-slate-300 hover:decoration-indigo-500;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 20% 20%, rgba(79, 70, 229, 0.15), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(124, 58, 237, 0.18), transparent 40%),
+    linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(248, 250, 252, 1));
+}
+
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(30px);
+  opacity: 0.6;
+  animation: float 12s ease-in-out infinite;
+}
+
+.blob.delay {
+  animation-delay: -4s;
+}
+
+.blob.delay-2 {
+  animation-delay: -8s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px) scale(1.05);
+  }
+}
+
+.marquee {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
