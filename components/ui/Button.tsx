@@ -6,6 +6,7 @@ type ButtonProps = {
   type?: "button" | "submit" | "reset";
   variant?: "primary" | "secondary" | "outline";
   className?: string;
+  onClick?: () => void;
   children: ReactNode;
 };
 
@@ -23,20 +24,21 @@ export default function Button({
   type = "button",
   variant = "primary",
   className = "",
+  onClick,
   children
 }: ButtonProps) {
   const classes = `${baseStyles} ${variants[variant]} ${className}`;
 
   if (href) {
     return (
-      <Link className={classes} href={href}>
+      <Link className={classes} href={href} onClick={onClick}>
         {children}
       </Link>
     );
   }
 
   return (
-    <button type={type} className={classes}>
+    <button type={type} className={classes} onClick={onClick}>
       {children}
     </button>
   );
