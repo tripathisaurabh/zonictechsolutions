@@ -7,6 +7,8 @@ type LeadRequest = {
   phone?: string;
   company?: string;
   message?: string;
+  preferredDate?: string;
+  preferredTime?: string;
 };
 
 export const runtime = "nodejs";
@@ -42,7 +44,9 @@ export async function POST(request: Request) {
       email,
       phone: payload.phone?.trim() || undefined,
       company: payload.company?.trim() || undefined,
-      message
+      message,
+      preferredDate: payload.preferredDate?.trim() || undefined,
+      preferredTime: payload.preferredTime?.trim() || undefined
     });
   } catch (error) {
     const message =

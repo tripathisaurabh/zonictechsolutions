@@ -11,7 +11,9 @@ const initialState = {
   email: "",
   phone: "",
   company: "",
-  message: ""
+  message: "",
+  preferredDate: "",
+  preferredTime: ""
 };
 
 export default function ContactForm() {
@@ -128,6 +130,30 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           required
+        />
+      </div>
+      <div>
+        <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="preferredDate">
+          Preferred Date
+        </label>
+        <Input
+          id="preferredDate"
+          name="preferredDate"
+          type="date"
+          value={formData.preferredDate}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label className="mb-2 block text-sm font-medium text-slate-700" htmlFor="preferredTime">
+          Preferred Time
+        </label>
+        <Input
+          id="preferredTime"
+          name="preferredTime"
+          type="time"
+          value={formData.preferredTime}
+          onChange={handleChange}
         />
       </div>
       {error && <p className="text-sm text-red-600" role="alert">{error}</p>}
