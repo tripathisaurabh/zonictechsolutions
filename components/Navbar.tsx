@@ -71,7 +71,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Button href="/contact#book-demo">Book a Demo</Button>
+          <Button href="/contact#book-demo">Book a Consultation</Button>
         </div>
 
         <button
@@ -130,7 +130,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Button href="/contact#book-demo" className="mt-2 w-full active:scale-[0.98]" onClick={closeMenu}>
-              Book a Demo
+              Book a Consultation
             </Button>
           </div>
         </div>
