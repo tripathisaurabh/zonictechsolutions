@@ -6,6 +6,12 @@ import Button from "./ui/Button";
 import Input from "./ui/Input";
 import Textarea from "./ui/Textarea";
 
+declare global {
+  interface Window {
+    gtag_report_conversion?: (url?: string) => boolean;
+  }
+}
+
 const initialState = {
   fullName: "",
   email: "",
@@ -58,6 +64,7 @@ export default function ContactForm() {
         throw new Error("Submission failed");
       }
 
+      window.gtag_report_conversion?.();
       router.push("/thank-you");
     } catch (err) {
       setError("Something went wrong. Please try again.");

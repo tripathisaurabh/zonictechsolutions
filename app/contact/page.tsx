@@ -3,6 +3,7 @@ import Script from "next/script";
 import Container from "../../components/ui/Container";
 import Card from "../../components/ui/Card";
 import ContactForm from "../../components/ContactForm";
+import ContactLinks from "../../components/ContactLinks";
 import { buildCanonical } from "../../lib/seo";
 import { SITE_ADDRESS, SITE_EMAIL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_LINK, SITE_URL } from "../../lib/constants";
 
@@ -69,19 +70,7 @@ export default function ContactPage() {
           <div className="w-full">
             <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
               <div className="space-y-4">
-                {contactOptions.map((option) => (
-                  <Card key={option.title}>
-                    <p className="text-sm font-semibold text-slate-900">{option.title}</p>
-                    <a
-                      className="mt-2 inline-block text-sm text-indigo-600"
-                      href={option.href}
-                      target={option.title === "WhatsApp" ? "_blank" : undefined}
-                      rel={option.title === "WhatsApp" ? "noopener noreferrer" : undefined}
-                    >
-                      {option.detail}
-                    </a>
-                  </Card>
-                ))}
+                <ContactLinks options={contactOptions} />
                 <Card>
                   <p className="text-sm font-semibold text-slate-900">Location</p>
                   <p className="mt-2 text-sm text-slate-600">{SITE_ADDRESS}</p>
@@ -107,6 +96,30 @@ export default function ContactPage() {
               </Card>
             </div>
             <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+            <Script
+              id="google-ads-conversion"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  function gtag_report_conversion(url) {
+                    var callback = function () {
+                      if (typeof(url) != 'undefined') {
+                        window.location = url;
+                      }
+                    };
+                    if (typeof gtag !== 'function') {
+                      callback();
+                      return false;
+                    }
+                    gtag('event', 'conversion', {
+                      'send_to': 'AW-17926414470/yO21CN-ktfQbEIbB_eNC',
+                      'event_callback': callback
+                    });
+                    return false;
+                  }
+                `
+              }}
+            />
           </div>
         </div>
       </Container>
